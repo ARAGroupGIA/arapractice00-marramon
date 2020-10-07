@@ -1,9 +1,17 @@
-/******************* Problem definition **********************************/
-/* Implement a program that it shows the message "Hello World" on screen. */
-/*************************************************************************/
- 
-/* Here, you must include the required libraries */
+#include <stdio.h>
 
-void main(){
-	/* Here, you must write the source code to show the missatge "Hello world" on screen*/
+#define PI 3.14159
+
+int main(){
+	float radio, area, perimeter;
+	
+	printf("Please, entry the radio: ");
+	scanf("%f", &radio);
+	
+	area      = PI*radio*radio;
+	perimeter = 2*PI*radio;
+	
+	printf("\nThe area is %f and the perimeter is %f\n", area, perimeter);
+	return 0;			
 }
+
