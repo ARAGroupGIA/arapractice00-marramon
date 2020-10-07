@@ -9,7 +9,7 @@ int main(){
 	scanf("%f", &radio);
 	
 	area      = PI*radio*radio;
-	perimeter = 2+PI*radio;
+	perimeter = 2PI*radio;
 	
 	printf("\nThe area is %f and the perimeter is %f\n", area, perimeter);
 	return 0;			
