@@ -1,16 +1,17 @@
 #include <stdio.h>
 
-#define PI 3.14159
+void main(){
+	/* Here, you should write the source code of your program */
+	float cp, p, sp;
+	int m;
 
-int main(){
-	float radio, area, perimeter;
-	
-	printf("Please, entry the radio: ");
-	scanf("%f", &radio);
-	
-	area      = PI*radio*radio;
-	perimeter = 2*PI*radio;
-	
-	printf("\nThe area is %f and the perimeter is %f\n", area, perimeter);
-	return 0;			
-}
+	printf("Please, Introduce the cost price in euros:" );
+	scanf("%f", &cp);
+	printf("Please, Introduce profit margin ('%%'):");
+	scanf("%d", &m);
+
+	p = cp * m/100;
+	sp = cp + p;
+
+	printf("\nThe selling price is %f euros\n", sp);
+	}
